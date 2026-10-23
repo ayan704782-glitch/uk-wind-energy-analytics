@@ -8,7 +8,7 @@ function App() {
 
   const fetchTelemetry = () => {
     setLoading(true);
-    fetch('http://127.0.0.1:8000/api/wind-data')
+    fetch('https://uk-wind-energy-analytics.onrender.com/api/wind-data')
       .then(res => res.json())
       .then(data => {
         if (data && data.data) {
